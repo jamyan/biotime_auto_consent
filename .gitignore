@@ -1,0 +1,23 @@
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.env
+*.pem
+*.key
+*.pfx
+
+# Local database backups and logs
+*.sql
+*.dump
+*.backup
+*.log
+
+# Python and IDE files
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.idea/
+.vscode/

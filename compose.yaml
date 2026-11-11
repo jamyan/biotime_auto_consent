@@ -1,0 +1,14 @@
+services:
+  auto-consent:
+    build: .
+    image: biotime-auto-consent:local
+    env_file:
+      - path: ./biotime.env
+        format: raw
+    restart: unless-stopped
+    read_only: true
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    stop_grace_period: 30s
